@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>大写字母.png</file>
+        <file>文件.png</file>
+        <file>下划线.png</file>
+        <file>斜体.png</file>
+        <file>Q4.png</file>
+    </qresource>
+</RCC>

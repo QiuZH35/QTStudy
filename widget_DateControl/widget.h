@@ -1,0 +1,50 @@
+#ifndef WIDGET_H
+#define WIDGET_H
+
+#include <QWidget>
+
+QT_BEGIN_NAMESPACE
+namespace Ui { class Widget; }
+QT_END_NAMESPACE
+
+class Widget : public QWidget
+{
+    Q_OBJECT
+
+private:
+        QTimer *fTimer;
+        int minuets=0;
+        int seconds=0;
+        int msec=0;
+public:
+    Widget(QWidget *parent = nullptr);
+    ~Widget();
+
+private slots:
+    void on_pushButton_clicked();
+
+    void on_btnGetNowDate_clicked();
+
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_4_clicked();
+
+    void on_calendarWidgetDate_selectionChanged();
+
+    void on_btnStartTime_clicked();
+
+    void on_btnStopTime_clicked();
+
+    void on_btnSetTimes_clicked();
+    void on_timer_timeout();
+
+    void on_btnResetStart_clicked();
+
+private:
+    Ui::Widget *ui;
+
+
+};
+#endif // WIDGET_H

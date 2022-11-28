@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new/image">
+        <file>girl.icon</file>
+        <file>boy.icon</file>
+    </qresource>
+</RCC>
